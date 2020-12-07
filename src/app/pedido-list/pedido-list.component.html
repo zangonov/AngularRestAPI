@@ -1,0 +1,31 @@
+
+
+
+    <div class="container aire">
+      <div class="row">
+        <div class="col">
+          <h1>List All Pedidos</h1>
+          <table class="table table-striped">
+            <thead>
+              <tr>
+                <th scope="col">Id</th>
+                <th scope="col">Nombre</th>
+                <th scope="col">Total</th>
+                <th scope="col">Detalle</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr *ngFor="let item of pedidosData">
+                <td>{{item.id}}</td>
+                <td>{{item.nombre}}</td>
+                <td>{{item.total}}</td>
+                <td><button class="btn btn-secondary" (click)="verDetalle(item.id)">Detalle</button>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  
+  

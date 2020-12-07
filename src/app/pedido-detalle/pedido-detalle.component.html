@@ -1,0 +1,24 @@
+<div class="container aire">
+  <div class="row">
+    <div class="col">
+    <h1>List All Articulos</h1>
+    <button [routerLink]="['/']" class="btn btn-info">Regresar</button>
+    <table class="table table-striped">
+      <thead>
+        <tr>
+          <th scope="col">Id</th>
+          <th scope="col">Nombre</th>
+          <th scope="col">Total</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let item of detalle">
+          <td>{{item.id}}</td>
+          <td>{{item.nombre}}</td>
+          <td>fffff</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+  </div>
